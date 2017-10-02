@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
+public class PilaLlenaException extends Exception {
+    public PilaLlenaException() {
+        super ("Pila Llana");
+    }
 
-public class PilaLlenaException {
 }

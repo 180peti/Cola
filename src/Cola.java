@@ -1,6 +1,6 @@
 public interface Cola<T> {
 
-    public void push(T d) throws Exception;
+    public void push(T d) throws PilaLlenaException;
 
     public T pop() throws Exception;
 
