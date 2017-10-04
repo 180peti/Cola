@@ -10,7 +10,7 @@ public class ColaImpl<T> implements Cola<T>{
 
     private boolean estaPlena()
     {
-
+        for (T)
     }
 
 
