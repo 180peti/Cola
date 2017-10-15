@@ -1,3 +1,5 @@
+import java.PilaLlenaException;
+
 public class ColaImpl<T> implements Cola<T>{
 
     int i;
@@ -10,7 +12,7 @@ public class ColaImpl<T> implements Cola<T>{
 
     private boolean estaPlena()
     {
-        for (T)
+        return true;
     }
 
 

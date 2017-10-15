@@ -1,7 +1,9 @@
+package java;
+
 public class PilaLlenaException extends Exception {
 
     public PilaLlenaException() {
-        super ("Pila Llana");
+        super ("Pila Llena");
     }
 
 }

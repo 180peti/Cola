@@ -1,3 +1,5 @@
+import java.PilaLlenaException;
+
 public interface Cola<T> {
 
     public void push(T d) throws PilaLlenaException;
