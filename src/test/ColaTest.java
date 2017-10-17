@@ -1,6 +1,6 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-
+import static org.junit.Assert.*;
 
 public class ColaTest{
 
@@ -16,11 +16,11 @@ public class ColaTest{
 
     @Test
     public void testCuaBuida() {
-        //Cola c  = new ColaImpl<Integer>(10);
-
-        System.out.println("Hola");
+        ColaImpl<int> p = new ColaImpl<int>(10);
+        //System.out.println("Hola");
         // assert statements
-        assertEquals("10 x 0 must be 0", 0, c.size(), 0);
+
+        assertEquals("Hola", 0, p.size(), 0);
     }
 
 
