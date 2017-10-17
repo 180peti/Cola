@@ -4,14 +4,14 @@ import java.PilaLlenaException;
 public class ColaImpl<T> implements Cola<T>{
 
     int i;
-    //T[] v;
+    T[] data;
     //Stack v = new Stack();
-    Cola a;
+    //Cola c;
 
     public ColaImpl(int len) {
-
+        data = (E[])new Object[len];
         //v = new T[len];
-        a = new Cola<T>(len);
+        //a = new Cola<T>(len);
                 //T[len];
         i = 0;
     }
@@ -28,7 +28,7 @@ public class ColaImpl<T> implements Cola<T>{
 
 
         if (estaPlena()) throw new PilaLlenaException();
-        a[i++]=d;
+        data[i++] = d;
     }
 
     @Override

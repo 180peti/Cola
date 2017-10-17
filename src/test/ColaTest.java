@@ -16,7 +16,8 @@ public class ColaTest{
 
     @Test
     public void testCuaBuida() {
-        Cola c  = new ColaImpl<Integer>(10);
+        //Cola c  = new ColaImpl<Integer>(10);
+
         System.out.println("Hola");
         // assert statements
         assertEquals("10 x 0 must be 0", 0, c.size(), 0);
