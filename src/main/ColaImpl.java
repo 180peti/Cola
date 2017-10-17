@@ -1,24 +1,21 @@
-import java.PilaLlenaException;
-
-
 public class ColaImpl<T> implements Cola<T>{
 
-    int i;
+    int i, leng;
     T[] data;
-    //Stack v = new Stack();
-    //Cola c;
 
+    // Constructor
     public ColaImpl(int len) {
-        data = (E[])new Object[len];
-        //v = new T[len];
-        //a = new Cola<T>(len);
-                //T[len];
+        data = (T[])new Object[len];
         i = 0;
+        leng = len;
     }
 
     private boolean estaPlena()
     {
-        return true;
+        if(i == leng-1)
+            return true;
+        else
+            return false;
     }
 
 
@@ -26,18 +23,18 @@ public class ColaImpl<T> implements Cola<T>{
     public void push(T d) throws PilaLlenaException {
         //log.info (d)
 
-
         if (estaPlena()) throw new PilaLlenaException();
         data[i++] = d;
     }
 
     @Override
     public T pop() throws Exception {
-        return null;
+        return data[i];
     }
 
     @Override
     public int size() {
-        return 0;
+
+        return i;
     }
 }

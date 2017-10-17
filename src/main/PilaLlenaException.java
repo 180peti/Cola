@@ -1,5 +1,3 @@
-package java;
-
 public class PilaLlenaException extends Exception {
 
     public PilaLlenaException() {

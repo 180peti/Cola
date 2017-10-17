@@ -1,4 +1,3 @@
-import java.PilaLlenaException;
 import java.lang.*;
 
 public interface Cola<T> {
